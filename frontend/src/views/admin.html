@@ -1,0 +1,61 @@
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="admin-crown"><i class="fa-solid fa-crown" style="font-size:11px"></i> ADMINISTRATOR</div>
+  <div class="aside-topbar">
+    <button class="btn-new"> Create ticket</button>
+
+    <div class="links-pill" id="btn-logout"><i class="fa-solid fa-link"></i> Log Out</div>
+
+
+    <div class="topbar-avatar"><img src="/frontend/img/perfil.png" alt="Admin"></div>
+  </div>
+</div>
+
+
+<!-- CONTENT -->
+<div class="content-area">
+
+  <!-- TICKET TABLE -->
+  <div class="panel">
+    <div class="panel-header">
+      <span class="panel-title">Reservas</span>
+      <div class="search-small">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="admin-search" type="text" placeholder="Search tickets...">
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Workspace</th>
+            <th>date</th>
+            <th>startHour</th>
+            <th>endHour</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!-- SIDE PANEL -->
+  <div class="side-panel">
+
+    <!-- TECHNICAL USERS -->
+    <div class="mini-card" style="flex:1; overflow:hidden; display:flex; flex-direction:column;">
+      <div class="mini-card-title"><i class="fa-solid fa-users"></i> Técnicos activos</div>
+      <div id="table-tech" style="overflow-y:auto; flex:1;"></div>
+    </div>
+  </div>
+</div>
+
+</div>

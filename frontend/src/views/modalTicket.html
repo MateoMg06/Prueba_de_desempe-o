@@ -1,0 +1,61 @@
+<!-- MODAL CREAR TICKET -->
+<dialog class="modal-overlay" id="modal-ticket">
+  <article class="modal">
+
+    <header class="modal-header">
+      <h2 class="modal-title" id="ticket-modal-title">Nueva Reserva</h2>
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </header>
+
+    <form class="modal-form" id="form-ticket">
+
+      <fieldset class="form-group">
+        <label for="ticket-title">Workspace</label>
+        <input type="text" id="ticket-title" placeholder="Enter the Workspace" required>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="ticket-desc">Reason</label>
+        <textarea id="ticket-desc" rows="4" placeholder="Describe the Reason you need that space" required></textarea>
+      </fieldset>
+
+      <div class="form-row">
+
+        <fieldset class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date">
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="Start">Start Hour</label>
+          <input type="time" id="startHour">
+        </fieldset>
+
+      </div>
+
+      <fieldset class="form-group">
+        <label for="End">End Hour</label>
+        <input type="time" id="endHour">
+
+      </fieldset>
+
+      <fieldset class="form-group" id="ticket-status-group">
+        <label for="ticket-status">Status</label>
+        <select id="ticket-status">
+          <option value="In Progress">En proceso</option>
+          <option value="Accepted">Aceptado</option>
+          <option value="Denied">Denegado</option>
+        </select>
+      </fieldset>
+
+      <footer class="modal-footer">
+        <button type="button" class="btn-cancel" id="btn-cancel">Cancel</button>
+        <button type="submit" class="btn-submit" id="ticket-submit">Create a Ticket</button>
+      </footer>
+
+    </form>
+
+  </article>
+</dialog>
