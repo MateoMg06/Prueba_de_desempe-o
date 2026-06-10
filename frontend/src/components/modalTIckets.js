@@ -56,13 +56,12 @@ export async function initModalTicket(refreshTickets) {
         return;
       }
 
-      document.getElementById("ticket-title").value = ticket.workspace;
-      document.getElementById("ticket-desc").value = ticket.reason;
-      document.getElementById("ticket-prioridad").value = ticket.date;
-      document.getElementById("ticket-type").value = ticket.startHour;
-      modalTitle.textContent = "Update Reservation";
-      btnSubmit.textContent = "Update Reservation";
-      statusSelect.value = ticket.status;
+      document.getElementById("ticket-title").value,
+     document.getElementById("ticket-desc").value,
+      document.getElementById("date").value,
+     document.getElementById("startHour").value,
+     document.getElementById("endHour").value,
+     user.id,
       showStatusByRole(user);
 
       modal.showModal();
